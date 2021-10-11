@@ -12,11 +12,11 @@
         RenderOptions.CachingHint="Cache"
         SnapsToDevicePixels="True"
         UseLayoutRounding="True"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="1100" Width="2000">
     <Window.Resources>
         <ResourceDictionary>
             <SolidColorBrush x:Key="BrushColor" Color="#D40B41" />
-            
+
             <Style x:Key="UnderlineTabItem" TargetType="{x:Type TabItem}">
                 <Setter Property="Background" Value="White" />
                 <Setter Property="Template">
@@ -124,6 +124,36 @@
                 <TabItem.Header>
                     <TextBlock Text="Komponenten" />
                 </TabItem.Header>
+
+                <local:StaggeredPanel>
+                    <StackPanel Width="310" Height="200" Background="AliceBlue" Margin="5">
+                        <TextBlock Text="1. Control" Foreground="Black" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel Width="310" Height="300" Background="BlanchedAlmond" Margin="5">
+                        <TextBlock Text="2. Control" Foreground="Black" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel Width="310" Height="120" Background="BurlyWood" Margin="5">
+                        <TextBlock Text="3. Control" Foreground="Black" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel Width="310" Height="250" Background="DimGray" Margin="5">
+                        <TextBlock Text="4. Control" Margin="5" />
+                    </StackPanel>
+                    <StackPanel Width="310" Height="450" Background="Indigo" Margin="5">
+                        <TextBlock Text="5. Control" Margin="5" />
+                    </StackPanel>
+                    <StackPanel Width="310" Height="100" Background="Wheat" Margin="5">
+                        <TextBlock Text="6. Control" Margin="5" Foreground="Black" />
+                    </StackPanel>
+                    <StackPanel Width="310" Height="230" Background="Navy" Margin="5">
+                        <TextBlock Text="7. Control" Margin="5" />
+                    </StackPanel>
+                    <StackPanel Width="310" Height="310" Background="Tan" Margin="5">
+                        <TextBlock Text="8. Control" Margin="5" Foreground="Black" />
+                    </StackPanel>
+                    <StackPanel Width="310" Height="120" Background="Sienna" Margin="5">
+                        <TextBlock Text="9. Control" Margin="5" />
+                    </StackPanel>
+                </local:StaggeredPanel>
             </TabItem>
         </TabControl>
     </Grid>
